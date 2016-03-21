@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="39979insouciant.insouciantBanglaCalendar" Publisher="CN=4E8A3DF9-4037-43BC-B07E-2809CE68E858" Version="1.1.4.3" />
+  <Properties>
+    <DisplayName>insouciant Bangla Calendar</DisplayName>
+    <PublisherDisplayName>insouciant</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>10.0.10240</OSMinVersion>
+    <OSMaxVersionTested>10.0.10240</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="bangla_calender_insouciant.Windows.App">
+      <m2:VisualElements DisplayName="Bangla Calendar(বাংলা ক্যালেন্ডার)" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Hello Windows CSharp.Windows" ForegroundText="dark" BackgroundColor="#404040" ToastCapable="true">
+        <m2:DefaultTile ShortName="বাংলা ক্যালেন্ডার" Wide310x150Logo="Assets\wide_logo.png">
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        <m2:ApplicationView MinWidth="default" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+        </m2:InitialRotationPreference>
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
